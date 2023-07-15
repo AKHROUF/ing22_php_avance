@@ -1,10 +1,16 @@
 <?php
   
+  namespace Dz\Etm\Formation\Models;
+
   class Point{
     private $x, $y;
 
     function __construct($a=0, $b=0) {
         $this->deplacer($a, $b);
+    }
+
+    function __destruct() {
+
     }
 
     #region accesseurs
@@ -21,4 +27,6 @@
     }
     function afficher() { echo "[" . $this->x . "," . $this->y . "]"; }
 
+    function __toString() { return "[{$this->x};{$this->y}]"; }
+    
   }
