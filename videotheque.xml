@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<videotheque >
+	<magasin idMagasin="m1">
+		<nom>Abdelmadjib Alloula</nom>
+		<adresse>213, rue didouche mourad</adresse>		
+		<cassette id="c1" etat="b" film="f1" >
+			<dateService>2013-01-02</dateService>			
+		</cassette>
+		<cassette id="c2" etat="b" film="f1" >
+			<dateService>2013-01-03</dateService>			
+		</cassette>		
+		<cassette id="c3" etat="b" film="f1" >
+			<dateService>2013-05-02</dateService>			
+		</cassette>		
+	</magasin>
+	<magasin idMagasin="m1">
+		<nom>ETM</nom>
+		<adresse>HYDRA</adresse>		
+		<cassette id="c1" etat="b" film="f1" >
+			<dateService>2013-01-02</dateService>			
+		</cassette>
+		<cassette id="c2" etat="b" film="f1" >
+			<dateService>2013-01-03</dateService>			
+		</cassette>		
+		<cassette id="c3" etat="b" film="f1" >
+			<dateService>2013-05-02</dateService>			
+		</cassette>		
+	</magasin>
+
+	
+	<film idFilm="f1" genre="Comédie" >
+		<titre>Taxi el makhfi</titre>
+		<duree>02:30:00</duree>
+		<role acteur="a1" >Chauffeur</role>
+		<role acteur="a2" >bombardi</role>
+	</film>	
+	<acteur idActeur="a1" >
+		<nom>????????</nom>
+		<age>40</age>
+	</acteur>
+</videotheque>

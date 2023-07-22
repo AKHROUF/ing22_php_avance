@@ -1,6 +1,6 @@
 <?php
 
-namespace Dz\Etm\Formation\Models;
+//namespace Dz\Etm\Formation\Models;
 
 class Etudiant {
     public int $id;

@@ -7,7 +7,7 @@
 <?php
 if (isset($_POST['AJOUTER'])){
     $nom = $_POST['NOM'] ?? "";
-    $prenom = $_POST['PRENOM'] ?? "";
+    $prenom = sha1($_POST['PRENOM']) ?? "";
     $date = $_POST['DATE'];
     $bdd = new PDO("mysql:host=localhost;dbname=ing22", "root", "");
 

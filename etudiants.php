@@ -1,8 +1,7 @@
 <?php
-   require_once "etudiant.php";
+//namespace Dz\Etm\Formation\Models;
 
-use Dz\Etm\Formation\Models\Etudiant;
-
+require_once "autoload.php";
 
 ?>
 <a href="ajouter.php">NOUVEL ETUDIANT</a>
@@ -23,7 +22,7 @@ try {
     
     $result = $bdd->query("select * from etudiant");
 
-    while($etudiant = $result->fetchObject('Dz\Etm\Formation\Models\Etudiant')) {
+    while($etudiant = $result->fetchObject('Etudiant')) {
         echo "<tr><td>{$etudiant->id}</td><td>{$etudiant->nom}</td>";
         echo "<td>{$etudiant->prenom}</td><td>{$etudiant->date_naissance}</td>";
         echo "<td><a href='modifier.php?id={$etudiant->id}'>MODIFIER</a></td></tr>";
